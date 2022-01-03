@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "Responsive Portfolio Website Using Html, Css and JavaScript, With a beautiful user interface. It contains a Header, Home, About, Skills, Qualification, Services, Portfolio, Project in mind, Testimonial, Contact and Footer. Don't forget to join the channel for more videos like this. [Bedimcode](https://www.youtube.com/c/Bedimcode)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alade-01/portfolio-website.git"
+  },
+  "author": "Alade-01",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alade-01/portfolio-website/issues"
+  },
+  "homepage": "https://github.com/alade-01/portfolio-website#readme",
+  "dependencies": {
+    "@iconscout/unicons": "^4.0.1",
+    "bootstrap": "^5.1.3"
+  }
+}

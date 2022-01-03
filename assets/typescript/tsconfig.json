@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    "module": "system",
+    "outFile": "dist/all.js",
+   //"outDir": "../dist1/all.js",
+    "target": "es5",
+    "sourceMap": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "files": [
+    /*------------------
+    --------------------
+    ===== BASES =====
+    ------------------
+    ------------------*/
+    "bases/base.ts",
+    "bases/bootstrap.ts",
+    "bases/color.ts",
+    "bases/font.ts",
+    "bases/fontawesome.ts",
+    "bases/settings.ts",
+    "bases/variables.ts",
+    /*------------------
+    --------------------
+    ===== LAYOUTS =====
+    ------------------
+    ------------------*/
+    "layouts/container.ts",
+    "layouts/footer.ts.ts",
+    "layouts/grid.ts.ts",
+    "layouts/header.ts",
+    "layouts/nav.ts",
+    "layouts/section.ts",
+    /*------------------
+    --------------------
+    ===== MODULES =====
+    ------------------
+    ------------------*/
+    "modules/queries/queries-for-large-devices.ts",
+    "modules/queries/queries-for-medium-devices.ts",
+    "modules/queries/queries-for-small-devices.ts",
+    "modules/block.ts",
+    "modules/buttons.ts",
+    "modules/form.ts",
+    "modules/icon.ts",
+
+    //"helloworld.ts",
+    //"index.ts"
+  ]
+}

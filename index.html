@@ -810,42 +810,53 @@
                 </div>
             </div>
 
-            <form action="" class="contact__form grid">
-                <div class="contact__input grid">
+            <form action="" class="contact__form grid" id="form">
+                <div class="contact__inputg grid">
                     <div class="contact__content">
-                        <label for="" class="contact__label">Name</label>
-                        <input type="text" class="contact__input">
+                        <label for="name" class="contact__label">Name</label>
+                        <input type="text" class="contact__input" id="name">
+                        <small class="small-text">Error Message</small>
                     </div>
                 </div>
-                <div class="contact__input grid">
+                <div class="contact__inputg grid">
                     <div class="contact__content">
-                        <label for="" class="contact__label">E-maïl</label>
-                        <input type="email" class="contact__input">
-                    </div>
-                </div>
-
-                <div class="contact__input grid">
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Project</label>
-                        <input type="text" class="contact__input">
+                        <label for="email" class="contact__label">E-maïl</label>
+                        <input type="email" class="contact__input" id="email">
+                        <small class="small-text">Error Message</small>
                     </div>
                 </div>
 
-                <div class="contact__input grid">
+                <div class="contact__inputg grid">
                     <div class="contact__content">
-                        <label for="" class="contact__label">Message</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        <label for="project" class="contact__label">Project</label>
+                        <input type="text" class="contact__input" id="project">
+                        <small class="small-text">Error Message</small>
+                    </div>
+                </div>
+
+                <div class="contact__inputg grid">
+                    <div class="contact__content">
+                        <label for="message" class="contact__label">Message</label>
+                        <textarea name="" id="message"  cols="0" rows="7" class="contact__input"></textarea>
+                        <small class="small-text">Error Message</small>
                     </div>
                 </div>
 
 
                 <div>
+                    <!--button to test the validation of form-->
+                    <input type="submit" value="send">
+                    <!--/button to test the validation of form-->
+
                     <a href="#" class="button button--flex">
                         Send message
                         <i class="uil uil-message button__icon"></i>
                     </a>
+
                 </div>
             </form>
+
+
         </div>
     </section>
 </main>

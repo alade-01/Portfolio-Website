@@ -3,9 +3,32 @@
   display: inline-block;
   background-color: var(--first-color);
   color: #FFF;
+  cursor: pointer;
   padding: 1rem;
   border-radius: .5rem;
-  font-weight: var(--font-medium);
+  //font-weight: var(--font-medium);
+  font-size: 1rem;
+  font-weight: bold;
+  & .input--send--mail{
+    cursor: pointer;
+    background-color:var(--first-color);
+    border: none;
+    font-size: 1rem;
+    //font-weight: bold;
+    color: #FFFFFF;
+
+    display: inline-block;
+    //background-color: var(--first-color);
+
+
+    padding: 3rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+    &:hover{
+      background-color:var(--first-color);
+      color: #FFFFFF;
+    }
+  }
   &:hover{
     background-color: var(--first-color-alt);
   }

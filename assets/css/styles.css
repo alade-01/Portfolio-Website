@@ -1000,9 +1000,26 @@ img {
   display: inline-block;
   background-color: var(--first-color);
   color: #FFF;
+  cursor: pointer;
   padding: 1rem;
   border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.button .input--send--mail {
+  cursor: pointer;
+  background-color: var(--first-color);
+  border: none;
+  font-size: 1rem;
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 3rem;
+  border-radius: 0.5rem;
   font-weight: var(--font-medium);
+}
+.button .input--send--mail:hover {
+  background-color: var(--first-color);
+  color: #FFFFFF;
 }
 .button:hover {
   background-color: var(--first-color-alt);

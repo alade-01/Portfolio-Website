@@ -16,20 +16,18 @@
     font-size: 1rem;
     //font-weight: bold;
     color: #FFFFFF;
-
     display: inline-block;
-    //background-color: var(--first-color);
-
-
-    padding: 3rem;
     border-radius: .5rem;
     font-weight: var(--font-medium);
     &:hover{
-      background-color:var(--first-color);
+      background-color: var(--first-color-alt);
       color: #FFFFFF;
     }
   }
   &:hover{
+    & .input--send--mail{
+      background-color: var(--first-color-alt);
+    }
     background-color: var(--first-color-alt);
   }
   & .button__icon{

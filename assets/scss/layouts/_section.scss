@@ -203,9 +203,17 @@
   overflow: hidden;
 }
 */
-
-
-
+.hide {
+  display: none;
+}
+.rotate-icon {
+  transform: rotate(180deg);
+}
+/*
+.transitionOpen{
+  transition: 3s;
+}
+*/
 /*==================== QUALIFICATION ====================*/
 
 .qualification__tabs{

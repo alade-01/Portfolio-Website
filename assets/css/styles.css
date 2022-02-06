@@ -378,7 +378,6 @@ img {
 }
 .about__info .about__info-title {
   font-weight: bold;
-  color: black;
   font-size: 1rem;
 }
 
@@ -508,6 +507,11 @@ img {
   transform: rotate(180deg);
 }
 
+/*
+.transitionOpen{
+  transition: 3s;
+}
+*/
 /*==================== QUALIFICATION ====================*/
 .qualification__tabs {
   display: flex;

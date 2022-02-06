@@ -36,7 +36,7 @@ skillsHeader.forEach((el) =>{
  */
 
 /*==================== ACCORDION SKILLS UPDATE====================*/
-
+/*
 // toggle answer
 
 const toggleAnswer = (e) => {
@@ -61,6 +61,7 @@ const hideAllAnswers = (question) => {
         }
     });
 };
+ */
 
 /*==================== QUALIFICATION TABS ====================*/
 const tabs = document.querySelectorAll('[data-target]'),

@@ -1,10 +1,11 @@
 //const { CleanWebpackPlugin } = require('clean-webpack-plugin'); // installed via npm
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+//const HtmlWebpackPlugin = require('html-webpack-plugin');
 //require("@babel/polyfill");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
+const webpack = require("webpack-dev-server");
 
 
 module.exports = {
@@ -23,11 +24,11 @@ module.exports = {
 
   plugins: [
     new MiniCssExtractPlugin({filename:"[name].css"}),
-    new HtmlWebpackPlugin({minify: false}) /*Update the html file after modify the entry.*/,
+    //new HtmlWebpackPlugin({minify: false}) /*Update the html file after modify the entry.*/,
  ],
   output: {
     filename: "[name].bundle.js",
-    path: path.resolve(__dirname, "assets/dist"),
+    path: path.resolve(__dirname, "dist"),
     clean: true, /*Clean the output dist folder*/
   },
   module: {
@@ -83,5 +84,11 @@ module.exports = {
     ],
       minimize: true,
   },
+    devServer:{
+      contentBase : path.resolve(__dirname, "test"),
+        writeToDisk: false,
+        hot:true,
+        port: 3000
+    },
   
 };

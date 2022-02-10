@@ -1,0 +1,39 @@
+/*========== BASE ==========*/
+*,::before,::after{
+  box-sizing: border-box;
+}
+.html-cv{
+  scroll-behavior: smooth;
+}
+.body-cv{
+  margin: 0 0 var(--header-height-cv) 0;
+  padding: 0;
+  font-family: var(--body-font-cv);
+  font-size: var(--normal-font-size-cv);
+  background-color:var(--body-color-cv);
+  color: var(--text-color-cv);
+}
+.h1-cv,
+.h2-cv,
+.h3-cv,
+.ul-cv,
+.p-cv{
+  margin: 0;
+}
+.h1-cv,
+.h2-cv,
+.h3-cv{
+  color: var(--title-color-cv);
+  font-weight: var(--font-medium-cv);
+}
+.ul-cv{
+  padding: 0;
+  list-style: none;
+}
+.a-cv{
+  text-decoration: none;
+}
+.img-cv{
+  max-width: 100%;
+  height: auto;
+}

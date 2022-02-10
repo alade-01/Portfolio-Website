@@ -1,0 +1,54 @@
+/*===== VARIABLES CSS =====*/
+:root {
+  --header-height-cv: 3rem;
+
+  /*========== Colors ==========*/
+  --title-color-cv: #0B0A0A;
+  --text-color-cv: #403A3A;
+  --text-color-light-cv: #707070;
+  --container-color-cv: #FAFAFA;
+  --container-color-alt-cv: #F0EFEF;
+  --body-color-cv: #FCFCFC;
+
+  /*========== Font and typography ==========*/
+  --body-font-cv: 'Poppins', sans-serif;
+  --h1-font-size-cv: 1.5rem;
+  --h2-font-size-cv: 1.25rem;
+  --h3-font-size-cv: 1rem;
+  --normal-font-size-cv: .938rem;
+  --small-font-size-cv: .875rem;
+  --smaller-font-size-cv: .813rem;
+
+  /*========== Font weight ==========*/
+  --font-medium-cv: 500;
+  --font-semi-bold-cv: 600;
+
+  /*========== Margenes ==========*/
+  --mb-1-cv: .5rem;
+  --mb-2-cv: 1rem;
+  --mb-3-cv: 1.5rem;
+
+  /*========== z index ==========*/
+  --z-tooltip-cv: 10;
+  --z-fixed-cv: 100;
+}
+
+/*========== Variables Dark theme ==========*/
+.body-cv.dark-theme{
+  /*========== Colors ==========*/
+  --title-color-cv: #F2F2F2;
+  --text-color-cv: #BFBFBF;
+  --container-color-cv: #212121;
+  --container-color-alt-cv: #181616;
+  --body-color-cv: #2B2B2B;
+}
+
+/*========== Font size variables to scale cv ==========*/
+.body-cv.scale-cv{
+  --h1-font-size-cv: .938rem;
+  --h2-font-size-cv: .938rem;
+  --h3-font-size-cv: .875rem;
+  --normal-font-size-cv: .813rem;
+  --small-font-size-cv: .75rem;
+  --smaller-font-size-cv: .688rem;
+}

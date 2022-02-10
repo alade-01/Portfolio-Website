@@ -1,0 +1,52 @@
+/* Classes modified for large screen size */
+@media screen and (min-width: 968px){
+  body{
+    margin: 3rem 0;
+  }
+  .bd-container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .l-header,
+  .scrolltop{
+    display: none;
+  }
+  .resume{
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    background-color: var(--container-color-cv);
+    box-shadow: 0 0 8px rgba(13,12,12,.15);
+  }
+  .resume__left{
+    background-color: var(--container-color-alt-cv);
+  }
+  .resume__left,
+  .resume__right{
+    padding: 0 1.5rem;
+  }
+
+  .generate-pdf{
+    display: inline-block;
+  }
+  .section-title,
+  .profile__description{
+    text-align: initial;
+  }
+  .home__container{
+    gap: 1.5rem;
+  }
+  .home__button-movil{
+    display: none;
+  }
+  .references__container{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .languages__content{
+    grid-template-columns: repeat(3,max-content);
+    column-gap: 3.5rem;
+  }
+  .interests__container{
+    grid-template-columns: repeat(4,max-content);
+    column-gap: 3.5rem;
+  }
+}

@@ -1,0 +1,119 @@
+/*==========================================================
+Master Stylesheet
+============================================================
+|-- scss/
+|   |-- bases/
+|     |-- _bases
+|     |-- _bootstrap
+|     |-- _colors
+|     |-- _fonts
+|     |-- _fontawesome
+|     |-- _settings
+|     |-- _variables
+|
+|   |-- layouts/
+|     |-- _container
+|     |-- _footer
+|     |-- _grid
+|     |-- _header
+|     |-- _nav
+|     |-- _sections
+
+|   |-- modules/
+|     |-- queries/
+|       |-- _queries-for-large-devices
+|       |-- _queries-for-medium-devices
+|       |--_queries-for-small-devices
+|     |-- _block
+|     |-- _buttons
+|     |-- _form
+|     |-- _icon
+|     |-- _printFile
+|
+`-- styles.scss
+*/
+
+
+/*------------------
+--------------------
+===== BASES =====
+------------------
+------------------*/
+
+  /*=== font ===*/
+@import "bases/font";
+
+  /*=== bootstrap ===*/
+@import "bases/bootstrap";
+
+  /*=== bootstrap ===*/
+@import "bases/fontawesome";
+
+  /*=== variables ===*/
+@import "bases/variables";
+
+  /*=== color ===*/
+@import "bases/color";
+
+  /*=== settings ===*/
+@import "bases/settings";
+
+  /*=== base ===*/
+@import "bases/base";
+/*
+@import "bases/swiper-vars";
+@import "bases/swiper";
+*/
+
+
+/*------------------
+--------------------
+===== LAYOUTS =====
+------------------
+------------------*/
+
+  /*=== container ===*/
+@import "layouts/container";
+
+  /*=== grid ===*/
+@import "layouts/grid";
+
+  /*=== header ===*/
+@import "layouts/header";
+
+  /*=== sections ===*/
+@import "layouts/section";
+
+  /*=== nav ===*/
+@import "layouts/nav";
+
+  /*=== footer ===*/
+@import "layouts/footer";
+
+
+/*------------------
+--------------------
+===== MODULES =====
+------------------
+------------------*/
+
+  /*=== printFile ===*/
+@import "modules/printFile.scss";
+
+  /*=== buttons ===*/
+@import "modules/buttons";
+
+  /*=== form ===*/
+@import "modules/form";
+
+  /*=== block ===*/
+@import "modules/block";
+
+  /*=== queries-for-small-devices ===*/
+@import "modules/queries/queries-for-small-devices";
+
+  /*=== queries-for-medium-devices ===*/
+@import "modules/queries/queries-for-medium-devices";
+
+  /*=== queries-for-large-devices ===*/
+@import "modules/queries/queries-for-large-devices";

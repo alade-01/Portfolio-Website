@@ -395,7 +395,7 @@ img {
 
 .about__buttons {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 /*==================== SKILLS ====================*/
@@ -909,8 +909,7 @@ img {
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
-    bottom: -100%;
-    left: 0;
+    top: -100%;
     width: 100%;
     background-color: var(--body-color);
     padding: 2rem 1.5rem 4rem;

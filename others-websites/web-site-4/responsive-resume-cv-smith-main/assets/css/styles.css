@@ -248,8 +248,11 @@ $scroll-thumb-color: hsl($hue-color,12%,36%);
 .l-header {
   width: 100%;
   position: fixed;
+  /*
   bottom: 0;
   left: 0;
+   */
+  top: 0;
   z-index: var(--z-fixed-cv);
   background-color: var(--body-color-cv);
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);

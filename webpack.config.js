@@ -84,11 +84,13 @@ module.exports = {
     ],
       minimize: true,
   },
+    /*
     devServer:{
       contentBase : path.resolve(__dirname, "test"),
         writeToDisk: false,
         hot:true,
         port: 3000
     },
+     */
   
 };

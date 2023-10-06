@@ -9,7 +9,7 @@ Don't forget to join the channel for more videos like this. [Bedimcode](https://
 npm install
 ```
 
-### Start project
+### Start projectt
 ```
 npm run build
 ```

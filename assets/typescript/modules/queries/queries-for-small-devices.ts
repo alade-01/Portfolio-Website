@@ -1,1 +1,0 @@
-/* For small devices */

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+    <html lang="en" class="html-cv">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Responsive resume cv</title>
+    </head>
+    <body class="body-cv">
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo a-cv">Smith</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list ul-cv">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link a-cv">
+                                <i class='bx bx-home nav__icon'></i>Home
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#profile" class="nav__link a-cv">
+                                <i class='bx bx-user nav__icon'></i>Profile
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#education" class="nav__link a-cv">
+                                <i class='bx bx-book nav__icon'></i>Education
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link a-cv">
+                                <i class='bx bx-receipt nav__icon'></i>Skills
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#experience" class="nav__link a-cv">
+                                <i class='bx bx-briefcase-alt nav__icon'></i>Experience
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#certificates" class="nav__link a-cv">
+                                <i class='bx bx-award nav__icon'></i>Certificates
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#references" class="nav__link a-cv">
+                                <i class='bx bx-link-external nav__icon'></i>References
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main bd-container">
+            <!-- All elements within this div, is generated in PDF -->
+            <div class="resume" id="area-cv">
+                <div class="resume__left">
+                    <!--========== HOME ==========-->
+                    <section class="home" id="home">
+                        <div class="home__container section bd-grid">
+                            <div class="home__data bd-grid">
+                                <img src="assets/img/perfil.jpg" alt="" class="home__img img-cv">
+                                <h1 class="home__title h1-cv">GBENGA WILLIAME <b> ALADE</b></h1>
+                                <h3 class="home_profession h3-cv">ANALYSTE PROGRAMMEUR</h3>
+                                <!-- Button to generate and download the pdf. Available for desktop. -->
+                                <div>
+                                    <a download="" href="assets/pdf/ResumeCv.pdf" class="home__button-movil a-cv">Download</a>
+                                </div>
+                            </div>
+
+                            <div class="home__address bd-grid">
+                                <span class="home__information">
+                                    <i class='bx bx-map home__icon'></i>Québec City, Canada
+                                </span>
+
+                                <span class="home__information">
+                                    <i class='bx bx-envelope home__icon'></i> aladewilliame1998@gmail.com
+                                </span>
+
+                                <span class="home__information">
+                                    <i class='bx bx-phone home__icon'></i> +1 (438) 468-0375
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Theme change button -->
+                        <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
+
+
+                        <!-- Button to generate and download the pdf. Available for desktop. -->
+                        <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button"></i>
+
+                    </section>          
+                    
+                    <!--========== SOCIAL ==========-->
+                    <section class="social section">
+                        <section class="social section">
+                            <h2 class="section-title h2-cv">SOCIAL</h2>
+                            <div class="social__container bd-grid">
+                                <a href="https://www.behance.net/williame-alade" target="_blank" class="social__link a-cv">
+                                    <i class='bx bxl-linkedin-square social__icon'></i>@aladewilliame
+                                </a>
+
+                                <a href="/
+                                https://www.youtube.com/channel/UCoJKTiy4-rGCHl2FxL1rkfA" target="_blank" class="social__link a-cv">
+                                    <i class='bx bxl-facebook social__icon'></i>@aladewilliame
+                                </a>
+
+                                <a href="https://github.com/alade-01?tab=repositories" target="_blank" class="social__link a-cv">
+                                    <i class='bx bxl-instagram social__icon'></i>@alade01
+                                </a>
+                            </div>
+                        </section>
+                    </section>
+
+                    <!--========== PROFILE ==========-->
+                    <section class="profile section" id="profile">
+                        <h2 class="section-title h2-cv">Profile</h2>
+                        <p class="profile__description p-cv" style="text-align: justify;">Diplômé en Génie Logiciel, je suis un développeur chevronné, 
+                            spécialisé dans la maîtrise du cycle de développement logiciel dans son intégralité, de la 
+                            conception initiale jusqu'à la phase de production. Mon expertise s'étend à la rédaction précise 
+                            de spécifications techniques et à la sélection stratégique d'outils de développement à la fine 
+                            pointe de la technologie, y compris les Framework, Bibliothèques, Environnements de Développement 
+                            Intégrés (IDEs) et langages de programmation. Je suis particulièrement reconnu pour mes 
+                            compétences avancées en débogage et en optimisation de code, garantissant
+                             ainsi la fourniture de solutions logicielles à la fois performantes et de haute qualité.
+                        </p>
+                    </section>
+                    
+                    <!--========== EDUCATION ==========-->
+                    <section class="education section" id="education">
+                        <h2 class="section-title h2-cv">Education</h2>
+
+                        <div class="education__container bd-grid">
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                    <span class="education__line"></span>
+                                </div>
+
+                                <div class="education__data bg-grid">
+                                    <h3 class="education__title h3-cv">BACCALAURÉAT PROFESSIONNELLE MIAGE</h3><br>
+                                    <span class="education__studies">Université Félix Houphouët Boigny, Abidjan Côte d’Ivoire</span> <br><br>
+                                    <span class="education__studies">Étude Universitaire, Science et Technologie, Génie Logiciel</span> <br><br>
+                                    <span class="education__year">2016 - 2020</span>
+                                </div>
+                            </div>
+
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                    <span class="education__line"></span>
+                                </div>
+
+                                <div class="education__data bg-grid">
+                                    <h3 class="education__title h3-cv">BACCALAURÉAT SECONDAIRE SCIENTIFIQUE SERIE D</h3><br>
+                                    <span class="education__studies">Collège Voltaire, Abidjan Côte d’Ivoire</span><br><br>
+                                    <span class="education__studies">Étude Secondaire, Science et Technologie, Enseignement Général</span> <br><br>
+                                    <span class="education__year">2013 - 2016</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <!--========== SKILLS  ==========-->
+                    <section class="skills section" id="skills">
+                        <h2 class="section-title">Langues</h2>
+                        <div class="skills__content bd-grid">
+                            <ul class="skills__data ul-cv">
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>Anglais
+                                </li>
+
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>Français
+                                </li>
+                            </ul>
+                            </ul>
+                        </div>
+                    </section>
+
+                </div>
+
+                <div class="resume__right">
+                    <!--========== EXPERIENCE ==========-->
+                    <section class="experience section" id="experience">
+                        <h2 class="section-title h2-cv">Experience</h2>
+                        <div class="experience__container bd-grid">
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title h3-cv">ANALYSTE-PROGRAMMEUR MOBILE, </h3>
+                                    <span class="experience__company">De Janv 2021 à Frévr 2024 | Neiba-Technologie Abidjan Côte d’Ivoire </span>
+                                    <p class="experience__description p-cv" style="text-align: justify;">
+
+                                        -	Expertise en développement mobile, assurant la réalisation technique et le déploiement d'applications sur Android et iOS <br>
+-	Conception d'interfaces utilisateur intuitives et performantes via Figma, en respectant les principes UX/UI <br>
+-	Maîtrise du versioning avec Git/GitLab, garantissant une gestion efficace et sécurisée du code source <br>
+-	Assurance qualité par des tests unitaires rigoureux et une résolution proactive des bugs <br>
+-	Application des Design Patterns, notamment BLoC, pour une architecture logicielle robuste et maintenable <br>
+-	Développement orienté objet conforme aux 5 principes SOLID, pour un code propre et évolutif<br>
+-	Gestion des données avec MySQL et Firebase, optimisant la performance et la scalabilité des applications<br>
+-	Implémentation d'algorithmes d'optimisation pour améliorer continuellement la réactivité et l'efficacité des applications<br>
+
+-	Coordination de projets via Asana, assurant un suivi précis des tâches et des fonctionnalités à implémenter<br>
+-	Utilisation avancée d'Insomnia pour le test et l'intégration efficace des API dans le cycle de développement<br>
+-	Collaborer avec les concepteurs UX/UI pour garantir des expériences utilisateur parfaites au pixel près<br>
+-	Traduire les exigences du client en spécifications techniques<br>
+-	Mettre en œuvre des processus d'authentification et d'autorisation robustes et sécurisés<br>
+-	Optimisez les performances des applications pour différents appareils, tailles d'écran et orientation
+
+
+                                        
+                                        </p>
+                                </div>
+                            </div>
+
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title h3-cv">ANALYSTE-PROGRAMMEUR MOBILE, </h3>
+                                    <span class="experience__company">De Janv 2017 à Déc 2020 | Web-Versalis Abidjan Côte d’Ivoire </span>
+                                    <p class="experience__description p-cv">
+                                        -	Expert en développement mobile, spécialisé dans la réalisation technique d’applications mobile<br>
+-	Créateur d'interfaces utilisateur intuitives et esthétiques via Figma (UX/UI Design)<br>
+-	Compétent dans l'emploi d'Insomnia pour le test et l'intégration efficace d'APIs<br>
+-	Implémentation d'algorithmes d'optimisation pour améliorer les performances<br>
+-	Application du Design Pattern MVC pour une architecture logicielle claire et maintenable<br>
+-	Assurance qualité par le biais de tests unitaires rigoureux<br>
+-	Optimisation avancée des requêtes SQL pour une exécution accélérée des données<br>
+-	Débogage expert et raffinement continu du code source pour une fiabilité maximale<br>
+-	Développement orienté objet conforme aux principes SOLID pour une évolutivité et une maintenance simplifiée<br>
+-	Collaborer avec les concepteurs UX/UX pour garantir des expériences utilisateur parfaites au pixel près<br>
+-	Gestion efficace des bases de données avec PostgreSQL pour une intégrité et une sécurité des données optimales<br>
+-	Optimisez les performances des applications pour différents appareils, tailles d'écran et orientation<br>
+-	Coordination des tâches et intégration des nouvelles fonctionnalités via YouTrack pour un suivi de projet impeccable<br>
+-	Mettre en œuvre des processus d'authentification et d'autorisation robustes et sécurisés<br>
+-	Maîtrise du versioning avec Git et GitHub, assurant une collaboration et une gestion de code source efficaces<br>
+
+                                    </p>
+                                                                
+                                </div>
+                            </div>
+                        </div>
+                    </section><br><br><br><br>
+
+                    <!--========== CERTIFICATES ==========-->
+                    <section class="certificate section" id="certificates">
+                        <h2 class="section-title h2-cv">Evaluation Comparative - MIFI</h2>
+                        <div class="certificate__container bd-grid">
+                            <div class="certificate__content">
+                                <h3 class="certificate__title h3-cv">Répère scolaire québécois et domaine(s) de formation : </h3>
+                                <p class="certificate__description p-cv">Baccalauréat, Science de l’informatique</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--========== REFERENCES ==========--
+                    <section class="references section" id="references">
+                        <h2 class="section-title h2-cv">References</h2>
+                        <div class="references__container bd-grid">
+                            <div class="references__content bd-grid">
+                                <span class="references__subtitle">Sr. Director</span>
+                                <h3 class="references__title h3-cv">Mr. Clay Doe</h3>
+                                <ul class="references__contact ul-cv">
+                                    <li>Phone: 999-777-666</li>
+                                    <li>Email: user@email.com</li>
+                                </ul>
+                            </div>
+
+                            <div class="references__content bd-grid">
+                                <span class="references__subtitle">Mag. Developer</span>
+                                <h3 class="references__title h3-cv">Mr. Robbinson Bass</h3>
+                                <ul class="references__contact ul-cv">
+                                    <li>Phone: 999-777-666</li>
+                                    <li>Email: user@email.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    !--========== LANGUAGES ==========-->
+                    <section class="languages section">
+                        <h2 class="section-title h2-cv">Compétences clés </h2>
+                        <div class="languages__container">
+                            <ul class="languages__content bd-grid ul-cv">
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span>Firebase, MySQL, PostgreSQL
+                                </li>
+
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span>.NET, Flutter, React Native
+                                </li>
+                            </ul>
+                        
+                        </div>
+                        <br>
+
+                        <div class="languages__container">
+                            <ul class="languages__content bd-grid ul-cv">
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span>Git, GitLab, GitHub, Figma
+                                </li>
+
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span>Visual Studio, Android Studio, Xcode
+                                </li>
+                            </ul>
+                        
+                        </div>
+                        <br>
+                        <div class="languages__container">
+                            <ul class="languages__content bd-grid ul-cv">
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span>C#, Dart, TypeScript, SCSS,<br> SASS
+                                </li>
+
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span>Gestionnaire d'État, Intégration <br> d'API, 
+                                    Sécurité d'application Mobile
+                                </li>
+                            </ul>
+                        
+                        </div>
+                        <br>
+
+                        <div class="languages__container">
+                            <ul class="languages__content bd-grid ul-cv">
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span>Contrôle de Version, Testes <br>et 
+                                    Débogages d'application Mobile
+                                </li>
+
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span>Mathématiques Universitaires <br> Appliquées 
+                                    à l'Informatique
+                                </li>
+                            </ul>
+                        
+                        </div>
+                    </section>
+                    
+                    <!--========== INTERESTS ==========-->
+                    <section class="interests section">
+                        <h2 class="section-title h2-cv">Intérêts</h2>
+                        <div class="interests__container bd-grid">
+                            <div class="interests__content">
+                                <i class='bx bx-headphone interests__icon'></i>
+                                <span class="interests__name">Musique</span>
+                            </div>
+
+                            <div class="interests__content">
+                                <i class='bx bxs-plane-alt interests__icon'></i>
+                                <span class="interests__name">Voyage</span>
+                            </div>
+
+                            <div class="interests__content">
+                                <i class='bx bx-book interests__icon'></i>
+                                <span class="interests__name">Lire</span>
+                            </div>
+
+                            <div class="interests__content">
+                                <i class='bx bx-dumbbell interests__icon'></i>
+                                <span class="interests__name">Fitness</span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>        
+        </main>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bxs-up-arrow-alt scrolltop__icon'></i>
+        </a>
+
+        <!--========== HTML2PDF ==========-->
+        <script src="js/html2pdf.bundle.min.js"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="js/main.js"></script>
+    </body>
+</html>

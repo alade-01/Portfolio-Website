@@ -1,5 +1,7 @@
+
+
 function sendMail() {
-    
+  mailData.innerHTML = '';
     var params = {
       name: document.getElementById("name_person_sec").value,
       email: document.getElementById("email_from_sec").value,
@@ -15,7 +17,14 @@ function sendMail() {
           document.getElementById("email_from_sec").value = "";
           document.getElementById("description_message_sec").value = "";
           console.log(res);
-          alert("Your message sent successfully!!")
+
+          mailData.innerHTML = `<div class="success-msg">
+          <i class="uil uil-comment-verify"></i>
+          Email was successfully sent to ${data.email_to}.
+        </div>
+        <br>` + mailData.innerHTML;
+
+          //alert("Your message sent successfully!!")
   
       })
       .catch(err=>console.log(err));

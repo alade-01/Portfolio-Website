@@ -1,5 +1,4 @@
-
-
+/*==================== SEND E-MAIL ====================*/
 function sendMail() {
   mailData.innerHTML = '';
     var params = {

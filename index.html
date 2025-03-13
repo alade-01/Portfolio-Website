@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "_OphcjqnO7DjTSGmh",
+        });
+    })();
+    </script> 
+
     <!--==================== UNICONS ====================-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
@@ -15,6 +27,7 @@
 
     <!--==================== ADD ICON LINK ====================-->
     <link rel = "icon" href ="res/img/iconMyResum.png" type = "image/x-icon" hidden>
+
 
     <title>MyResume</title>
 </head>
@@ -231,7 +244,7 @@
                     <a download="" href="assets/pdf/myResumeCv.pdf" class="button button--flex">
                         Get My CV<i class="uil uil-download-alt button__icon"></i>
                     </a>
-                    <a href="others/myResumeCv/index.html" target="_blank" class="button button--flex" style="margin-left:5px ;">
+                    <a href="myResumeCv/index.html" target="_blank" class="button button--flex" style="margin-left:5px ;">
                         View my CV <i class="uil uil-eye button__icon"></i>
                     </a>
                 </div>
@@ -1111,7 +1124,7 @@
                 <div class="contact__inputg grid">
                     <div class="contact__content">
                         <label for="email_from" class="contact__label">From :</label>
-                        <input type="email" class="email_from contact__input" id="email_from_sec">
+                        <input type="email" class="email_from contact__input" id="email_from">
                         <small class="small-text">Error Message</small>
                     </div>
                 </div>
@@ -1130,7 +1143,7 @@
                 <div class="contact__inputg grid">
                     <div class="contact__content">
                         <label for="name_project" class="contact__label">Name Person :</label>
-                        <input type="text" class="name_project contact__input" id="name_person_sec">
+                        <input type="text" class="name_project contact__input" id="name_person">
                         <small class="small-text">Error Message</small>
                     </div>
                 </div>
@@ -1139,7 +1152,7 @@
                 <div class="contact__inputg grid">
                     <div class="contact__content">
                         <label for="description_message" class="contact__label">Message :</label>
-                        <textarea class="description_message contact__input" id="description_message_sec"></textarea>
+                        <textarea class="description_message contact__input" id="description_message"></textarea>
                         <small class="small-text">Error Message</small>
                     </div>
                 </div>
@@ -1208,19 +1221,6 @@
 <a href="#" class="scrollup" id="scroll-up">
     <i class="uil uil-arrow-up scrollup__icon"></i>
 </a>
-
-<!--==================== SWIPER JS ====================-->
-<!--script src="assets/js/sendMailEmailJS.js"></script-->
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "_OphcjqnO7DjTSGmh",
-      });
-   })();
-</script>
 
 <!--==================== SWIPER JS ====================-->
 <script src="res/js/swiper-bundle.min.js"></script>

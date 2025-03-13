@@ -3,9 +3,12 @@
 (function() {
     "use strict";
     const form  = document.getElementById('form'),
-        emailTOValidation   = document.getElementById('email_from_sec'),
-        nameProjectValidation = document.getElementById('name_person_sec'),
-        descriptionMessageValidation = document.getElementById('description_message_sec');
+        emailTOValidation   = document.getElementById('email_from'),
+        nameProjectValidation = document.getElementById('name_person'),
+        descriptionMessageValidation = document.getElementById('description_message'),
+        mailData = document.querySelector('.mail-data')
+
+        mailData.innerHTML = '';
 
     //Show input error messages
     function showError(input, message) {
@@ -26,29 +29,23 @@
         const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         if(re.test(input.value.trim())) {
             showSucces(input)
+            return true;
         }else {
             showError(input,'Email is not invalid');
+            return false;
         }
     }
 
     //checkRequired fields
     function checkRequired(inputArr) {
-        /*
-        inputArr.forEach(function(input){
-            if(input.value.trim() === ''){
-                showError(input,`${getFieldName(input)} is required`)
-            }else {
-                showSucces(input);
-            }
-        });*/
-
         if(inputArr.value.trim() === ''){
-            showError(inputArr,`${getFieldName(inputArr)} is required`)
+            showError(inputArr,`${getFieldName(inputArr)} is required`);
+            return false;
         }else {
             showSucces(inputArr);
+            return true;
         }
     }
-
 
     //check input Length
     function checkLength(input, min ,max) {
@@ -66,25 +63,70 @@
         return input.id.charAt(0).toUpperCase() + input.id.slice(1);
     }
 
-    // check passwords match
-    function checkPasswordMatch(input1, input2) {
-        if(input1.value !== input2.value) {
-            showError(input2, 'Passwords do not match');
-        }
-    }
-
-
     //Event Listeners
     form.addEventListener('submit',function(e) {
         e.preventDefault();
-
-        //checkRequired([nameProjectValidation, emailFromValidation, emailTOValidation, descriptionMessageValidation]);
-        checkRequired(nameProjectValidation);
-        checkRequired(emailTOValidation);
-        checkRequired(descriptionMessageValidation);
-        checkLength(nameProjectValidation,8,50);
-        //checkLength(password,6,25);
+        console.log(checkRequired(nameProjectValidation));
+        console.log(checkRequired(emailTOValidation));
+        console.log(checkRequired(descriptionMessageValidation));
+        //checkLength(nameProjectValidation,8,50);
         checkEmail(emailTOValidation);
-        //checkPasswordMatch(password, password2);
+        
+        if(checkRequired(nameProjectValidation) == true && checkRequired(emailTOValidation)
+            && checkRequired(descriptionMessageValidation) && 
+                checkEmail(emailTOValidation))
+        {
+
+            //console.log(nameProject);
+            var params = {
+              name: document.getElementById("name_person").value,
+              email: document.getElementById("email_from").value,
+              message: document.getElementById("description_message").value,
+            };
+      
+            const serviceID = "service_chnwan4";
+            const templateID = "template_dwcyl2e";
+          
+              emailjs.send(serviceID, templateID, params)
+              .then(res=>
+                {
+                  console.log(res.status);
+        
+                  if (res.status === 200) {
+      
+       /*
+                      * hiddenNotification function
+                      * */
+       function hiddenNotification()
+       {
+        mailData.innerHTML = `<div class="success-msg">
+        <i class="uil uil-comment-verify"></i>
+        Email was successfully sent to 
+      </div>
+      <br>` + mailData.innerHTML;
+       }
+      
+       console.log(res);
+      
+       /*Make the message disappear 4 seconds after displaying it*/
+       window.setTimeout(hiddenNotification, 4000);
+      
+       
+                    }
+                  else{
+                      
+                    mailData.innerHTML = '<div class="error-msg">\n' +
+                    '                    <i class="fa fa-times-circle"></i>\n' +
+                    '                    Error sending an email!<br>.\n' +
+                    '                </div>' + mailData.innerHTML;
+      
+      
+                  }
+              })
+              .catch(err=>console.log(err));
+          
+        }else{
+            console.log("form is not valid");
+        }
     });
 }).call(this);

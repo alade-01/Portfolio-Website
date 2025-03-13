@@ -1,4 +1,10 @@
 
+(function(){
+    emailjs.init({
+        publicKey: "_OphcjqnO7DjTSGmh",
+    });
+})(); 
+
 /*==================== VALIDATION FORM ====================*/
 (function() {
     "use strict";
@@ -18,7 +24,7 @@
         small.innerText = message;
     }
 
-    //show success colour
+    //show success color
     function showSucces(input) {
         const formControl = input.parentElement;
         formControl.className = 'contact__content success';
@@ -31,7 +37,7 @@
             showSucces(input)
             return true;
         }else {
-            showError(input,'Email is not invalid');
+            showError(input,'Email is not valid');
             return false;
         }
     }
@@ -77,7 +83,6 @@
                 checkEmail(emailTOValidation))
         {
 
-            //console.log(nameProject);
             var params = {
               name: document.getElementById("name_person").value,
               email: document.getElementById("email_from").value,
@@ -90,7 +95,6 @@
               emailjs.send(serviceID, templateID, params)
               .then(res=>
                 {
-                  console.log(res.status);
         
                   if (res.status === 200) {
       
@@ -101,7 +105,7 @@
        {
         mailData.innerHTML = `<div class="success-msg">
         <i class="uil uil-comment-verify"></i>
-        Email was successfully sent to 
+        Email was successfully sent to aladewilliame1998@gmail.com
       </div>
       <br>` + mailData.innerHTML;
        }
@@ -127,6 +131,73 @@
           
         }else{
             console.log("form is not valid");
+
+            mailData.innerHTML = '<div class="error-msg">\n' +
+            '                    <i class="fa fa-times-circle"></i>\n' +
+            '                    Check the information entered carefully<br>.\n' +
+            '                </div>' + mailData.innerHTML;
         }
     });
 }).call(this);
+
+
+/*==================== SEND MAIL OLD CODE ====================*/
+/*
+
+const emailTO = document.querySelector('.email_to'),
+    emailFrom = document.querySelector('.email_from'),
+    nameProject = document.querySelector('.name_project'),
+    descriptionMessage = document.querySelector('.description_message'),
+    submitButton = document.querySelector('.submit'),
+    mailData = document.querySelector('.mail-data')
+
+spaceInMessage = '  ';
+mailData.innerHTML = '';
+
+submitButton.onclick = () => {
+
+    if (emailTO.value.length === 0 || nameProject.value.length === 0 || descriptionMessage.value.length === 0 || emailFrom.value.length === 0 )
+        submitButton.type = 'submit';
+    else {
+        submitButton.type = 'button';
+
+        fetch('https://movers-san-francisco.com/email_sender.php', {
+            method:   'POST',
+            'Accept': 'application/json',
+            headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+            body:     'email_message=' + JSON.stringify({
+                'mail_to': emailTO.value,
+                'mail_subject': nameProject.value,
+                'mail_message': descriptionMessage.value + spaceInMessage + emailFrom.value
+                //'mail_message': emailsend.value
+            })
+        }).then(response => response.json()).then(data => {
+
+            if (data.result === 'success') {
+                /*
+                * hiddenNotification function
+                * *
+                function hiddenNotification()
+                {
+                    mailData.innerHTML="";
+                }
+                mailData.innerHTML = `<div class="success-msg">
+                                        <i class="uil uil-comment-verify"></i>
+                                        Email was successfully sent to ${data.email_to}.
+                                      </div>
+                                      <br>` + mailData.innerHTML;
+                console.log(data);
+
+                /*Make the message disappear 4 seconds after displaying it*
+                window.setTimeout(hiddenNotification, 4000);
+            }
+            else{
+                mailData.innerHTML = '<div class="error-msg">\n' +
+                    '                    <i class="fa fa-times-circle"></i>\n' +
+                    '                    Error sending an email!<br>.\n' +
+                    '                </div>' + mailData.innerHTML;
+            }
+        })
+    }
+}
+*/

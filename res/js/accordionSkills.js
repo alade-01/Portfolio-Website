@@ -1,7 +1,6 @@
 /*==================== ACCORDION SKILLS UPDATE====================*/
 
 // toggle answer
-
 const toggleAnswer = (e) => {
     const question = e.childNodes[1];
     hideAllAnswers(question);

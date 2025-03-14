@@ -128,14 +128,17 @@
           
         }else{
             console.log("form is not valid");
-
+            mailData.innerHTML = '';
             mailData.innerHTML = '<div class="error-msg">\n' +
             '                    <i class="fa fa-times-circle"></i>\n' +
             '                    Check the information entered carefully' +
             '                </div>' + mailData.innerHTML;
             setTimeout(function() {
+                
                 mailData.remove();
-            }, 4000);
+                
+            }, 5000);
+            
         }
     });
 }).call(this);

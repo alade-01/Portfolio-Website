@@ -98,31 +98,28 @@
         
                   if (res.status === 200) {
       
-       /*
-                      * hiddenNotification function
-                      * */
-       function hiddenNotification()
-       {
-        mailData.innerHTML = `<div class="success-msg">
-        <i class="uil uil-comment-verify"></i>
-        Email was successfully sent to aladewilliame1998@gmail.com
-      </div>
-      <br>` + mailData.innerHTML;
-       }
+       mailData.innerHTML = `<div class="success-msg">
+       <i class="uil uil-comment-verify"></i>
+       The email was sent successfully
+       </div>` + mailData.innerHTML;
       
-       console.log(res);
-      
-       /*Make the message disappear 4 seconds after displaying it*/
-       window.setTimeout(hiddenNotification, 4000);
-      
+        //console.log(res);
+
+       setTimeout(function() {
+        mailData.remove();
+    }, 5000);
        
                     }
                   else{
                       
                     mailData.innerHTML = '<div class="error-msg">\n' +
                     '                    <i class="fa fa-times-circle"></i>\n' +
-                    '                    Error sending an email!<br>.\n' +
+                    '                    Error sending an email!<br>\n' +
                     '                </div>' + mailData.innerHTML;
+
+                    setTimeout(function() {
+                        mailData.remove();
+                    }, 5000);
       
       
                   }
@@ -134,8 +131,11 @@
 
             mailData.innerHTML = '<div class="error-msg">\n' +
             '                    <i class="fa fa-times-circle"></i>\n' +
-            '                    Check the information entered carefully<br>.\n' +
+            '                    Check the information entered carefully' +
             '                </div>' + mailData.innerHTML;
+            setTimeout(function() {
+                mailData.remove();
+            }, 4000);
         }
     });
 }).call(this);

@@ -1,55 +1,54 @@
 /*==================== QUALIFICATION TABS ====================*/
-const tabs = document.querySelectorAll('[data-target]'),
-    tabContents = document.querySelectorAll('[data-content]')
+const tabs = document.querySelectorAll('[data-target]');
+const tabContents = document.querySelectorAll('[data-content]');
 
-tabs.forEach(tab =>{
-    tab.addEventListener('click',()=>{
-        const target = document.querySelector(tab.dataset.target)
+function activateTab(tab) {
+    // Get the target content and show it
+    const target = document.querySelector(tab.dataset.target);
+    tabContents.forEach(tabContent => tabContent.classList.remove('qualification__active'));
+    target.classList.add('qualification__active');
 
-        tabContents.forEach(tabContent => {
-            tabContent.classList.remove('qualification__active')
-        })
-        target.classList.add('qualification__active')
+    // Highlight the clicked tab and remove active class from others
+    tabs.forEach(t => t.classList.remove('qualification__active'));
+    tab.classList.add('qualification__active');
+}
 
-        tabs.forEach(tab => {
-            tab.classList.remove('qualification__active')
-
-        })
-        tab.classList.add('qualification__active')
-    })
-})
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => activateTab(tab));
+});
 
 /*==================== SERVICES MODAL ====================*/
-const modalViews = document.querySelectorAll('.services__modal'),
-    modalBtns = document.querySelectorAll('.services__button'),
-    modalCloses = document.querySelectorAll('.services__modal-close')
+const modalViews = document.querySelectorAll('.services__modal');
+const modalBtns = document.querySelectorAll('.services__button');
+const modalCloses = document.querySelectorAll('.services__modal-close');
 
-let modal = function (modalClick){
-    modalViews[modalClick].classList.add('active-modal')
+// Function to open modal
+function openModal(index) {
+    modalViews[index].classList.add('active-modal');
 }
-modalBtns.forEach((modalBtns,i) =>{
-    modalBtns.addEventListener('click',() =>{
-        modal(i)
-    })
-})
 
-modalCloses.forEach((modalCloses) =>{
-    modalCloses.addEventListener('click',() =>{
-        modalViews.forEach((modalViews) =>{
-            modalViews.classList.remove('active-modal')
-        })
-    })
-})
+// Function to close all modals
+function closeModals() {
+    modalViews.forEach(modalView => modalView.classList.remove('active-modal'));
+}
+
+// Add event listeners to modal buttons
+modalBtns.forEach((modalBtn, index) => {
+    modalBtn.addEventListener('click', () => openModal(index));
+});
+
+// Add event listeners to modal close buttons
+modalCloses.forEach(modalClose => {
+    modalClose.addEventListener('click', closeModals);
+});
 
 /*==================== PORTFOLIO SWIPER  ====================*/
 /*
 import Swiper from 'swiper/swiper-bundle.esm.js';
 import 'swiper/swiper-bundle.css';
 */
-let swiperPortfolio = new Swiper('.portfolio__container', {
-
+const swiperPortfolio = new Swiper('.portfolio__container', {
     cssMode: true,
-    logo :true,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -61,19 +60,18 @@ let swiperPortfolio = new Swiper('.portfolio__container', {
 });
 
 /*==================== TESTIMONIAL ====================*/
-let swiperTestimonial = new Swiper('.testimonial__container', {
-    loop :true,
-    grabCursor:true,
-    spaceBetween:48,
-
+const swiperTestimonial = new Swiper('.testimonial__container', {
+    loop: true,
+    grabCursor: true,
+    spaceBetween: 48,
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
-        dynamicBullets:true,
+        dynamicBullets: true,
     },
-    breakpoints:{
-        568:{
-            slidesPerView:2,
-        }
-    }
+    breakpoints: {
+        568: {
+            slidesPerView: 2,
+        },
+    },
 });

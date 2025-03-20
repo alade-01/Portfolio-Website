@@ -1,10 +1,10 @@
 /*==================== QUALIFICATION TABS ====================*/
-const tabs = document.querySelectorAll('[data-target]');
-const tabContents = document.querySelectorAll('[data-content]');
+const tabs = document.querySelectorAll('[data-target]') as NodeListOf<HTMLElement>;
+const tabContents = document.querySelectorAll('[data-content]') as NodeListOf<HTMLElement>;
 
-function activateTab(tab) {
+function activateTab(tab: HTMLElement) {
     // Get the target content and show it
-    const target = document.querySelector(tab.dataset.target);
+    const target = document.querySelector(tab.dataset.target as string) as HTMLElement;
     tabContents.forEach(tabContent => tabContent.classList.remove('qualification__active'));
     target.classList.add('qualification__active');
 
@@ -18,12 +18,12 @@ tabs.forEach(tab => {
 });
 
 /*==================== SERVICES MODAL ====================*/
-const modalViews = document.querySelectorAll('.services__modal');
-const modalBtns = document.querySelectorAll('.services__button');
-const modalCloses = document.querySelectorAll('.services__modal-close');
+const modalViews = document.querySelectorAll('.services__modal') as NodeListOf<HTMLElement>;
+const modalBtns = document.querySelectorAll('.services__button') as NodeListOf<HTMLElement>;
+const modalCloses = document.querySelectorAll('.services__modal-close') as NodeListOf<HTMLElement>;
 
 // Function to open modal
-function openModal(index) {
+function openModal(index: number) {
     modalViews[index].classList.add('active-modal');
 }
 
@@ -43,10 +43,11 @@ modalCloses.forEach(modalClose => {
 });
 
 /*==================== PORTFOLIO SWIPER  ====================*/
-/*
+/* Import Swiper module
 import Swiper from 'swiper/swiper-bundle.esm.js';
 import 'swiper/swiper-bundle.css';
 */
+
 const swiperPortfolio = new Swiper('.portfolio__container', {
     cssMode: true,
     navigation: {

@@ -40,25 +40,25 @@ Master Stylesheet
 ------------------*/
 
   /*=== font ===*/
-@import "bases/font";
+@use "bases/font";
 
   /*=== bootstrap ===*/
-@import "bases/bootstrap";
+@use "bases/bootstrap";
 
   /*=== bootstrap ===*/
-@import "bases/fontawesome";
+@use "bases/fontawesome";
 
   /*=== variables ===*/
-@import "bases/variables";
+@use "bases/variables";
 
   /*=== color ===*/
-@import "bases/color";
+@use "bases/color";
 
   /*=== settings ===*/
-@import "bases/settings";
+@use "bases/settings";
 
   /*=== base ===*/
-@import "bases/base";
+@use "bases/base";
 /*
 @import "bases/swiper-vars";
 @import "bases/swiper";
@@ -72,22 +72,22 @@ Master Stylesheet
 ------------------*/
 
   /*=== container ===*/
-@import "layouts/container";
+@use "layouts/container";
 
   /*=== grid ===*/
-@import "layouts/grid";
+@use "layouts/grid";
 
   /*=== header ===*/
-@import "layouts/header";
+@use "layouts/header";
 
   /*=== sections ===*/
-@import "layouts/section";
+@use "layouts/section";
 
   /*=== nav ===*/
-@import "layouts/nav";
+@use "layouts/nav";
 
   /*=== footer ===*/
-@import "layouts/footer";
+@use "layouts/footer";
 
 
 /*------------------
@@ -97,19 +97,19 @@ Master Stylesheet
 ------------------*/
 
   /*=== buttons ===*/
-@import "modules/buttons";
+@use "modules/buttons";
 
   /*=== form ===*/
-@import "modules/form";
+@use "modules/form";
 
   /*=== block ===*/
-@import "modules/block";
+@use "modules/block";
 
   /*=== queries-for-small-devices ===*/
-@import "modules/queries/queries-for-small-devices";
+@use "modules/queries/queries-for-small-devices";
 
   /*=== queries-for-medium-devices ===*/
-@import "modules/queries/queries-for-medium-devices";
+@use "modules/queries/queries-for-medium-devices";
 
   /*=== queries-for-large-devices ===*/
-@import "modules/queries/queries-for-large-devices";
+@use "modules/queries/queries-for-large-devices";

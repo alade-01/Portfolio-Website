@@ -41,38 +41,3 @@ modalBtns.forEach((modalBtn, index) => {
 modalCloses.forEach(modalClose => {
     modalClose.addEventListener('click', closeModals);
 });
-
-/*==================== PORTFOLIO SWIPER  ====================*/
-/* Import Swiper module
-import Swiper from 'swiper/swiper-bundle.esm.js';
-import 'swiper/swiper-bundle.css';
-*/
-
-const swiperPortfolio = new Swiper('.portfolio__container', {
-    cssMode: true,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-});
-
-/*==================== TESTIMONIAL ====================*/
-const swiperTestimonial = new Swiper('.testimonial__container', {
-    loop: true,
-    grabCursor: true,
-    spaceBetween: 48,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        dynamicBullets: true,
-    },
-    breakpoints: {
-        568: {
-            slidesPerView: 2,
-        },
-    },
-});

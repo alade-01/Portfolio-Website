@@ -1,10 +1,10 @@
 /*==========================================================
-Master Stylesheet
+  Master Stylesheet
 ============================================================
 |-- scss/
 |   |-- bases/
 |     |-- _bases
-|     |-- _bootstrap
+|     |-- _tailwind
 |     |-- _colors
 |     |-- _fonts
 |     |-- _fontawesome
@@ -43,7 +43,7 @@ Master Stylesheet
 @use "bases/font";
 
   /*=== bootstrap ===*/
-@use "bases/bootstrap";
+@use "bases/tailwind";
 
   /*=== bootstrap ===*/
 @use "bases/fontawesome";

@@ -1,4 +1,6 @@
 
+ /**
+  * 
 import Swiper from 'swiper';
 import 'swiper/css';
   // Import Swiper styles
@@ -23,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 });
- 
+  */
 
 
 /**

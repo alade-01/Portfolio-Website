@@ -17,6 +17,7 @@
 
 /*=========== SUCCESS MESSAGE FOR THE SEND MAIL FOR A PROJECT===========*/
 .mail-data{
+  text-align: center;
   & .success-msg {
     color: #270;
     background-color: #DFF2BF;
@@ -27,8 +28,7 @@
   }
   & .success-msg,
   & .error-msg {
-    margin: 10px 0;
     padding: 10px;
-    border-radius: 3px 3px 3px 3px;
+    border-radius: 3px;
   }
 }

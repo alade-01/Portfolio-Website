@@ -21,11 +21,6 @@
     grid-template-columns: repeat(2,1fr);
   }
 
-  /*
-  .skills__container{
-      grid-template-columns: repeat(3,1fr);
-  }*/
-
   /*==== qualification ====*/
   .qualification__tabs{
     display: flex;
@@ -37,9 +32,6 @@
     grid-template-columns: .6fr;
     justify-content: center;
   }
-  /*
-  .qualification__button{
-  }*/
 }
 
 @media screen and (min-width: 768px){
